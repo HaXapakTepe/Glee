@@ -3,5 +3,98 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    display: flex;
+  }
+  .logo__img-text {
+    padding: 10px 0 0 10px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    @extend %rubik-500;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 30px;
+  }
+  &__list-link {
+    line-height: 12px;
+    font-size: 15px;
+    color: $default;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  &__link{
+    position: relative;
+  }
+  &__link + .user-nav__link {
+    padding-left: 60px;
+  }
+  &__bg-search {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -32px;
+    background-color: #edf1f4;
+  }
+  &__bg-cart {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 25px;
+    right: -32px;
+    background-color: #fcd7b6;
+  }
+  &__bg-list {
+    position: relative;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -35px;
+    background-color: #a3bbc8;
+  }
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $num;
+    top: -9px;
+    right: -9px;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: $header-title;
+    @extend %dmsans-400;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';

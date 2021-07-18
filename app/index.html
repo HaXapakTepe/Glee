@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,19 @@
   <title>Glee.</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
 
+<body>
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
-        </a>
+        <div class="header__logo">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/header__item--design.svg" alt="logo">
+          </a>
+          <a class="logo" href="#">
+            <img class="logo__img-text" src="images/logo.svg" alt="logo">
+          </a>
+        </div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -38,15 +44,32 @@
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#"></a>
-          <a class="user-nav__link" href="#"><div class="user-nav__num">0</div></a>
-          <a class="user-nav__link" href="#"><div class="user-nav__num">0</div></a>
-          <a class="user-nav__link" href="#"></a>
+          <span class="user-nav__bg-search"></span>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icon/search.svg" alt="user icon" >
+          </a>
+          <span class="user-nav__bg-cart">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icon/heart.svg" alt="user icon">
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__cart" href="#">
+              <img class="user-nav__link-img" src="images/icon/cart.svg" alt="user icon">
+              <span class="user-nav__num">0</span>
+            </a>
+          </span>
+            <span class="user-nav__bg-list"></span>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icon/list.svg" alt="user icon">
+            </a>
         </div>
       </div>
     </div>
   </header>
 
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
