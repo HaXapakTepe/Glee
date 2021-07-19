@@ -2,16 +2,33 @@
 // sans-serif;
 // font-family: 'Rubik',
 // sans-serif;
+html,
+body {
+  height: 100%;
+}
 
 body {
   line-height: 30px;
   font-size: 16px;
   color: $default;
   @extend %rubik-400;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+}
+.logo__img-text {
+ padding-left: 10px;
 }
