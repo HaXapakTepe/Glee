@@ -32,3 +32,31 @@ body {
 .logo__img-text {
  padding-left: 10px;
 }
+
+.title {
+  text-align: center;
+  color: $title;
+  font-size: 36px;
+  line-height: 65px;
+  @extend %dmsans-700;
+  padding-bottom: 40px;
+}
+
+.filter {
+  text-align: center;
+}
+
+.button {
+  @extend %dmsans-700;
+  border: none;
+  background-color: transparent;
+  color: #b8b8b8;
+  padding: 0 0 80px;
+  margin: 0 15px ;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    color: #363636;
+    transition: all .3s;
+  }
+}
