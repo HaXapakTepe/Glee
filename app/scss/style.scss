@@ -1,11 +1,11 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
   padding: 50px;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -18,11 +18,9 @@
     display: flex;
     @extend %rubik-500;
   }
-
   &__list-item+.menu__list-item {
     padding-left: 40px;
   }
-
   &__list-link {
     line-height: 12px;
     font-size: 15px;
@@ -32,7 +30,6 @@
 
 .user-nav {
   display: flex;
-
   &__left {
     display: flex;
     justify-content: center;
@@ -43,7 +40,6 @@
     border-radius: 50%;
     background-color: #edf1f4;
   }
-
   &__middle--line::before {
     content: '';
     position: absolute;
@@ -51,7 +47,6 @@
     width: 1px;
     height: 32px;
   }
-
   &__middle {
     position: relative;
     display: flex;
@@ -61,7 +56,6 @@
     border-radius: 25px;
     background-color: #fcd7b6;
   }
-
   &__right {
     display: flex;
     align-items: center;
@@ -72,11 +66,9 @@
     border-radius: 50%;
     background-color: $bg-btn;
   }
-
   &__link {
     position: relative;
   }
-
   &__num {
     position: absolute;
     width: 16px;
@@ -92,23 +84,107 @@
   }
 }
 
+.top-slider {
+  margin: 0 45px;
+  padding-top: 100px;
+  background-color: #fcd7b6;
 
+  &__container {
+    max-width: 1460px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-left: 60px;
+    padding-top: 90px;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title-h6;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    max-width: 330px;
+    font-size: 18px;
+    color: $default;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    @extend %rubik-500;
+    width: 180px;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 25px 20px;
+    color: #fff;
+    background-color: $bg-btn;
+    text-align-last: left;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn-icon {
+    position: relative;
+    right: 45px;
+    cursor: pointer;
+
+    path {
+      fill: rgba(255, 255, 255)
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 45px;
+
+    li {
+      padding: 5px;
+
+      button {
+        @extend %rubik-500;
+        padding: 0;
+        font-size: 11px;
+        width: 30px;
+        height: 30px;
+        color: #667983;
+        background-color: #fde3cc;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &.slick-active {
+        button {
+          color: #243f4d;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
 
 .info {
   max-width: 1920px;
   padding: 0 0 20px;
   margin: 0 45px;
   background-color: #fef7f0;
-
   &__items {
     display: flex;
   }
-
   &__item-list {
     max-width: 270px;
     margin: 0 auto;
   }
-
   &__item-img {
     position: relative;
     right: 65px;
@@ -116,21 +192,18 @@
     width: 50px;
     height: 50px;
   }
-
   &__item-title {
     @extend %dmsans-700;
     color: #414141;
     font-size: 18px;
     line-height: 40px;
   }
-
   &__item-text {
     position: relative;
     font-size: 16px;
     line-height: 30px;
     @extend %dmsans-400;
   }
-
   &__item--line::before,
   &__item--line::after {
     content: '';
@@ -140,18 +213,16 @@
     background-color: #e8e4df;
     top: -90px;
   }
-
   &__item--line::before {
     left: -180px;
   }
-
   &__item--line::after {
     right: -180px;
   }
 }
 
 .product {
-  padding: 75px 0 105px;
+  padding-top: 75px;
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -160,19 +231,19 @@
 }
 
 .product-item {
+  display: flex;
+  flex-direction: column;
   max-width: 270px;
-  height: 380px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-
   &__images {
     object-fit: cover;
-    height: 175px;
+    min-height: 165px;
     margin: 0 auto;
     padding-top: 35px;
+    margin-top: auto;
   }
-
   &__wrapper {
     position: relative;
     bottom: 35px;
@@ -182,7 +253,6 @@
     justify-content: space-evenly;
     overflow: hidden;
   }
-
   &__link-box {
     width: 45px;
     height: 45px;
@@ -191,61 +261,47 @@
     transition: all .3s;
     transform: translateY(300%);
   }
-
   &__link-box:hover {
     background-color: #a2bac7;
   }
-
   &__link {
-    display: inherit;
-    display: block;
-    width: 100%;
-    height: 100%;
-
     path {
       transition: all .3s;
     }
   }
-
   &__link:hover {
     path {
       fill: #fff;
     }
   }
-
   &__icon {
     position: relative;
     top: 12px;
   }
-
   &__title {
     @extend %dmsans-500;
     color: $title-h6;
     font-size: 16px;
     line-height: 40px;
-    padding: 60px 0 0;
+    margin-bottom: 15px;
   }
-
   &__price {
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 40xp;
     color: #a2bac7;
-    padding: 0 0 35px;
+    margin-bottom: 40px;
   }
-
   &:hover {
     .product-item__link-box {
       transform: translateY(0);
     }
   }
-
   &__bottom {
     display: flex;
     padding-top: 185px;
     margin: 0 45px;
   }
-
   &__info {
     display: flex;
     width: 100%;
@@ -253,22 +309,18 @@
     margin-right: 30px;
     background-color: #feefe2;
   }
-
   &__info:last-child {
     margin-right: 0;
   }
-
   &__img {
     position: relative;
     bottom: 90px;
     margin: 0 20px 0 auto;
   }
-
   &__list {
     max-width: 330px;
     margin: auto auto 90px 20px;
   }
-
   &__subtitle {
     @extend %dmsans-700;
     font-size: 26px;
@@ -276,14 +328,12 @@
     margin-bottom: 30px;
     color: $title-h6;
   }
-
   &__text {
     font-size: 16px;
     line-height: 30px;
     color: $title-h6;
     margin-bottom: 30px;
   }
-
   &__btn {
     @extend %rubik-500;
     font-size: 15px;
@@ -297,7 +347,6 @@
     padding: 25px 20px;
     cursor: pointer;
   }
-
   &__btn-icon {
     position: relative;
     right: 45px;
@@ -305,54 +354,68 @@
   }
 }
 
-
-
-
-
-
-
-
+.design {
+  padding-top: 80px;
+  margin-bottom: 120px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    min-height: 230px;
+  }
+  &__item-title {
+    width: 175px;
+    padding-top: 30px;
+    margin: 0 0 0 35px;
+  }
+  &__item-link {
+    @extend %dmsans-700;
+    font-size: 20px;
+    color: #191919;
+  }
+  &__item-subtitle {
+    @extend %dmsans-700;
+    color: #a3bbc8;
+    margin-left: 35px;
+  }
+}
 
 .footer-top {
-  padding: 80px 0;
   border-bottom: 1px solid #dae4e9;
   display: flex;
-
   .logo {
     display: flex;
-
     &__img-text {
       padding-left: 10px;
     }
   }
-
   &__contact {
     width: 210px;
     margin-right: 90px;
   }
-
   &__nav {
     width: 250px;
     margin-right: 50px;
   }
-
   &__item-form {
     max-width: 280px;
   }
-
   &__logo {
     margin-bottom: 28px;
   }
-
   &__title {
     @extend %dmsans-700;
     text-transform: uppercase;
-    margin: 17px 0 28px;
+    margin: 18px 0 28px;
     font-size: 16px;
     line-height: 21px;
     color: #1f2044;
   }
-
   &__adress,
   &__phone,
   &__email {
@@ -362,7 +425,6 @@
     margin-bottom: 20px;
     color: $list-nav;
   }
-
   &__link,
   &__list {
     display: block;
@@ -371,17 +433,14 @@
     line-height: 32px;
     color: $list-nav;
   }
-
   &__text {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 35px;
   }
-
   &__form {
     display: flex;
   }
-
   &__form-input {
     @extend %dmsans-400;
     border: none;
@@ -389,13 +448,11 @@
     max-width: 170px;
     width: 100%;
     padding: 0 12px;
-
     &::placeholder {
       color: #234969;
       font-size: 12px;
     }
   }
-
   &__form-btn {
     border: none;
     background-color: $bg-btn;
@@ -411,23 +468,21 @@
   justify-content: space-between;
   align-items: center;
   line-height: 32px;
-
   &__copy {
     font-size: 14px;
     line-height: 32px;
     color: $fb;
   }
-
   &__link {
     font-size: 14px;
     line-height: 32px;
     color: $fb;
   }
-
   &__cell {
     margin: 0 12px;
   }
 }
+
 
 
 

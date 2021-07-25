@@ -14,6 +14,7 @@ body {
   @extend %rubik-400;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main {
@@ -59,4 +60,8 @@ body {
     color: #363636;
     transition: all .3s;
   }
+}
+
+.mixitup-control-active {
+  color: #243f4d;
 }
