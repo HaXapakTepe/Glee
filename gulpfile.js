@@ -33,8 +33,11 @@ function scripts () {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
+  .pipe(concat('mixitup.min.js'))
+  .pipe(concat('slick.min.js'))
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(dest('app/js'))

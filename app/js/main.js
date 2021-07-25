@@ -5,9 +5,6 @@ $ (function() {
     fade: true
   });
   
-  
-  
-  
-  // var mixer = mixitup('.');
-
+  var mixer = mixitup('.product__items');
+  var mixer = mixitup('.design__items');
 });
