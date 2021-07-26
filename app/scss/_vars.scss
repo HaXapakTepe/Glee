@@ -30,3 +30,15 @@ $title: #191919;
   font-family: 'DMSans-Bold', sans serif;
   font-weight: 700;
 }
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
