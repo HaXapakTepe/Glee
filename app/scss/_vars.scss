@@ -22,11 +22,23 @@ $title: #191919;
 }
 
 %dmsans-500 {
-  font-family: 'DMSans-Medium', sans serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
 }
 
 %dmsans-700 {
-  font-family: 'DMSans-Bold', sans serif;
+  font-family: 'DM Sans-Bold', sans serif;
   font-weight: 700;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
