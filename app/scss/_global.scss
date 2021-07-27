@@ -65,3 +65,11 @@ body {
 .mixitup-control-active {
   color: #243f4d;
 }
+
+.breadcrums {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+}
