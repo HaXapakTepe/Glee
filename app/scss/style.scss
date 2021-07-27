@@ -84,6 +84,23 @@
   }
 }
 
+.top {
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+  &__container {
+    padding: 35px 0 30px;
+    background-color: #edf1f4;
+    text-align: center;
+  }
+  &__item {
+
+  }
+}
+
 .top-slider {
   margin: 0 45px;
   padding-top: 100px;
@@ -586,22 +603,21 @@
 }
 
 .footer-bottom {
-  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 32px;
+  height: 90px;
+  color: #7b7b7b;
   &__copy {
     font-size: 14px;
     line-height: 32px;
-    color: $fb;
+    color: #7b7b7b;
   }
   &__link {
     font-size: 14px;
     line-height: 32px;
-    color: $fb;
-  }
-  &__cell {
+    color: #7b7b7b;
     margin: 0 12px;
   }
 }
