@@ -16,6 +16,8 @@
 .menu {
   &__list {
     display: flex;
+    position: relative;
+    left: 80px;
     @extend %rubik-500;
   }
   &__list-item+.menu__list-item {
@@ -85,19 +87,18 @@
 }
 
 .top {
+  padding-top: 15px;
   &__title {
-    @extend %rubik-300;
-    font-size: 36px;
+    font-family:'Rubik', sans serif;
+    font-weight: 300;
     line-height: 24px;
     padding-bottom: 10px;
+    color: #222933;
   }
   &__container {
-    padding: 35px 0 30px;
+    padding: 30px 0;
     background-color: #edf1f4;
     text-align: center;
-  }
-  &__item {
-
   }
 }
 
@@ -479,9 +480,6 @@
     padding: 0 30px 25px;
     min-height: 220px;
   }
-  &__item-textlink {
-    
-  }
   &__item-text {
     @extend %dmsans-500;
     font-size: 18px;
@@ -501,26 +499,27 @@
   &__item-autor {
     color: #222933;
   }
-  .partners {
-    position: relative;
-    padding: 50px 0;
-    &__bg {
-      position: absolute;
-      background: #fef7f0;
-      width: 100%;
-      height: 490px;
-      z-index: -1;
-      bottom: 0;
+}
+.partners {
+  position: relative;
+  background: #fef7f0;
+  &__bg {
+    position: absolute;
+    background: #fef7f0;
+    width: 100%;
+    height: 470px;
+    z-index: -1;
+    bottom: 0;
     }
-    &__list {
-      height: 170px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    &__item {
-      list-style-type: none;
-    }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    background: #fef7f0;
+  }
+  &__item {
+    list-style-type: none;
   }
 }
 
@@ -622,6 +621,59 @@
   }
 }
 
+.modal {
+  padding-top: 120px;
+  max-width: 470px;
+  margin: 0 auto 120px;
+  &__label {
+    display: block;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__btn {
+    width: 100%;
+    @extend %rubik-500;
+    background-color: #a3bbc8;
+    font-size: 18px;
+    line-height: 60px;
+    color: #fffefe;
+    border: none;
+    cursor: pointer;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 25px;
+    ;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+  }
+  &__error {
+    margin: 0 auto;
+    color: #436372;
+  }
+  &__links {
+    text-align: center;
+  }
+  &__link {
+    display: block;
+    @extend %rubik-500;
+    color: #243f4d;
+    font-size: 18px;
+    line-height: 60px;
+    border: 2px solid #a3bbc8;
+  }
+}
 
 
 

@@ -72,4 +72,11 @@ body {
   &__list {
     display: flex;
   }
+  &__item {
+    color: #979ba0;
+  }
+  &__link {
+    color: inherit;
+    margin: 0 10px;
+  }
 }
