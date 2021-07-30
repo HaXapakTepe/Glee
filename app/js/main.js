@@ -20,6 +20,13 @@ $ (function() {
     arrows: false,
     fade: true
   });
+
+  $(".star").rateYo({
+    starWidth: "17px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
   
   var mixer = mixitup('.product__items');
   var mixer = mixitup('.design__items');

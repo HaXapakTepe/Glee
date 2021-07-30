@@ -200,11 +200,13 @@
     display: flex;
   }
   &__item-list {
+    position: relative;
     max-width: 270px;
     margin: 0 auto;
+    padding: 55px 0 35px;
   }
   &__item-img {
-    position: relative;
+    position: absolute;
     top: 60px;
     width: 50px;
     height: 50px;
@@ -695,13 +697,13 @@
     font-size: 18px;
     color: #243f4d;
     @extend %dmsans-700;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     &::after{
       content: '';
       position: absolute;
       width: 40px;
       height: 3px;
-      top: 13px;
+      top: 14px;
       left: 70px;
       background-color: #a3bbc8
     }
@@ -720,7 +722,6 @@
       background-color: #a3bbc8
     }
   }
-
   &__label {
     display: block;
     margin-bottom: 10px;
@@ -730,7 +731,6 @@
       margin-bottom: 0;
     }
   }
-
   &__input {
     display: none;
 
@@ -738,7 +738,6 @@
       background-color: #edf1f4;
     }
   }
-
   &__checkbox {
     display: flex;
     justify-content: space-between;
@@ -811,13 +810,7 @@
 .filter-brand {
   &__title {
     &::after {
-      content: '';
-      position: absolute;
-      width: 40px;
-      height: 3px;
-      top: 13px;
       left: 75px;
-      background-color: #a3bbc8
     }
   }
   &__label {
@@ -840,7 +833,6 @@
       }
     }
   }
-    
   &__checkbox {
     display: flex;
     justify-content: space-between;
@@ -851,13 +843,56 @@
   &__text {
     color: #243f4d;
   }
-  &__num {
-    color: #979ba0;
-    &:checked+.filter-brand__num {
-      color: #243f4d !important;
+}
+
+.filter-product {
+  &__title {
+    &::after {
+      left: 180px;
     }
   }
+  &__items {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__images {
+    object-fit: cover;
+    width: 70px;
+    border: 3px solid #f7f7f7;
+    margin-right: 20px;
+  }
+  &__img {
+    margin: 6px auto 4px;
+  }
+  &__info {
+    text-align: left;
+    padding: 5px 0;
+  }
+  &__link {
+    display: flex;
+    color: #333333;
+  }
+  &__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-size: 15px;
+    line-height: 27px;
+  }
 }
+
+.star {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
 
 
 
