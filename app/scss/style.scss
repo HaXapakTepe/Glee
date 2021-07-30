@@ -257,7 +257,7 @@
 .product-item {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
+  min-width: 270px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -676,7 +676,7 @@
 }
 
 .shop {
-  padding: 80px 0 120px;
+  padding-top: 80px;
   &__inner {
     display: flex;
   }
@@ -688,6 +688,7 @@
 
 .filter {
   &__item {
+    width: 270px;
     padding: 35px 0;
   }
   &__title {
@@ -888,7 +889,17 @@
   margin-bottom: 5px;
 }
 
-
+.shop-content {
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product-item {
+      margin-bottom: 40px;
+    }
+  }
+}
 
 
 
