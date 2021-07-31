@@ -1,5 +1,20 @@
 $ (function() {
 
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -25,7 +40,7 @@ $ (function() {
     starWidth: "17px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
-    readOnly: true
+    readOnly: true,
   });
   
   var mixer = mixitup('.product__items');
