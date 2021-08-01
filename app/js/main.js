@@ -8,6 +8,7 @@ $ (function() {
     vertical: true,
     draggable: false
   });
+  
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
     draggable: false,
@@ -25,9 +26,7 @@ $ (function() {
     onChange: function (data) {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
-
       },
-
   });
 
   $('.top-slider__inner').slick({
@@ -36,7 +35,7 @@ $ (function() {
     fade: true
   });
 
-  $(".star").rateYo({
+  $('.star').rateYo({
     starWidth: "17px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
