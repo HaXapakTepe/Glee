@@ -42,6 +42,8 @@ $ (function() {
     ratedFill: "#ffcc00",
     readOnly: true,
   });
+
+  $('.product-one__item-num').styler();
   
   var mixer = mixitup('.product__items');
   var mixer = mixitup('.design__items');
