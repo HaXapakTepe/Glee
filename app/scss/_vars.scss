@@ -5,8 +5,10 @@ $num: #fff;
 $list-nav: #b6b6b6;
 $fb: #909090;
 $title: #191919;
-$body: 'Rubik', sans serif;
-$DM-title: 'DMSans', sans serif;
+$f-rubik: 'Rubik', sans serif;
+$f-dmsans: 'DM Sans', sans serif;
+$f-poppins: 'Poppins', sans serif;
+
 
 %rubik-300 {
   font-family:'Rubik', sans serif;
@@ -24,17 +26,17 @@ $DM-title: 'DMSans', sans serif;
 }
 
 %dmsans-400 {
-  font-family: 'DMSans', sans serif;
+  font-family: 'DM Sans', sans serif;
   font-weight: 400;
 }
 
 %dmsans-500 {
-  font-family: 'DMSans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
 }
 
 %dmsans-700 {
-  font-family: 'DMSans', sans serif;
+  font-family: 'DM Sans', sans serif;
   font-weight: 700;
 }
 

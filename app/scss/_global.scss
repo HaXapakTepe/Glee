@@ -11,7 +11,8 @@ body {
   line-height: 30px;
   font-size: 16px;
   color: $default;
-  @extend %rubik-400;
+  font-family: $f-rubik;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -41,9 +42,9 @@ body {
   color: $title;
   font-size: 36px;
   line-height: 65px;
-  @extend %dmsans-700;
+  font-family: $f-dmsans;
   font-weight: 700;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .filter {
@@ -52,11 +53,12 @@ body {
 }
 
 .button {
-  @extend %dmsans-700;
+  font-family: $f-dmsans;
+  font-weight: 700;
   border: none;
   background-color: transparent;
   color: #b8b8b8;
-  margin: 0 15px ;
+  margin: 0 10px ;
   cursor: pointer;
   transition: all .3s;
   &:hover{

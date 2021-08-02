@@ -145,7 +145,7 @@
     height: 60px;
     font-size: 15px;
     line-height: 12px;
-    padding: 25px 20px;
+    padding: 0 20px;
     color: #fff;
     background-color: $bg-btn;
     text-align-last: left;
@@ -225,7 +225,7 @@
   &__item-text {
     position: relative;
     font-size: 16px;
-    line-height: 30px;
+    color: #585858;
     @extend %dmsans-400;
   }
   &__item--line::before,
@@ -355,12 +355,13 @@
     font-size: 15px;
     line-height: 12px;
     width: 180px;
+    height: 60px;
     color: #436372;
     background-color: #feefe2;
     border: 1px solid #b3b7b5;
     border-radius: 6px;
     text-align-last: left;
-    padding: 25px 20px;
+    padding: 0 20px;
     cursor: pointer;
   }
   &__btn-icon {
@@ -371,8 +372,7 @@
 }
 
 .design {
-  padding-top: 80px;
-  margin-bottom: 120px;
+  padding: 70px 0 120px;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -403,7 +403,7 @@
 }
 
 .video-interior {
-  padding-bottom: 95px;
+  padding-bottom: 100px;
   &__popup {
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,7 +573,7 @@
     border: none;
     background-color: #fef7f0;
     max-width: 170px;
-    width: 100%;
+    height: 40px;
     padding: 0 12px;
     &::placeholder {
       color: #234969;
