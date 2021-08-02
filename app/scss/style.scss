@@ -5,9 +5,9 @@
 @import 'global';
 
 .header {
-  width: 1920px;
+  width: 1770px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,6 @@
 }
 
 .top-slider {
-  margin: 0 45px;
   padding-top: 100px;
   background-color: #fcd7b6;
 
@@ -134,7 +133,7 @@
   }
 
   &__text {
-    max-width: 330px;
+    max-width: 360px;
     font-size: 18px;
     color: $default;
     margin-bottom: 40px;
@@ -142,7 +141,8 @@
 
   &__btn {
     @extend %rubik-500;
-    width: 180px;
+    width: 200px;
+    height: 60px;
     font-size: 15px;
     line-height: 12px;
     padding: 25px 20px;
@@ -196,8 +196,6 @@
 
 .info {
   max-width: 1920px;
-  padding: 0 0 20px;
-  margin: 0 45px;
   background-color: #fef7f0;
   &__items {
     display: flex;
@@ -206,11 +204,11 @@
     position: relative;
     max-width: 270px;
     margin: 0 auto;
-    padding: 55px 0 35px;
+    padding: 40px 0 30px;
   }
   &__item-img {
     position: absolute;
-    top: 60px;
+    top: 50px;
     width: 50px;
     height: 50px;
   }
@@ -237,13 +235,13 @@
     width: 1px;
     height: 170px;
     background-color: #e8e4df;
-    top: -90px;
+    top: -80px;
   }
   &__item--line::before {
-    left: -250px;
+    left: -280px;
   }
   &__item--line::after {
-    right: -140px;
+    right: -130px;
   }
 }
 
@@ -319,7 +317,6 @@
   &__bottom {
     display: flex;
     padding-top: 185px;
-    margin: 0 45px;
   }
   &__info {
     display: flex;
