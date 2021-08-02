@@ -20,7 +20,8 @@
     display: flex;
     position: relative;
     left: 80px;
-    @extend %rubik-500;
+    font-family: $f-rubik;
+    font-weight: 500;
   }
   &__list-item+.menu__list-item {
     padding-left: 40px;
@@ -91,7 +92,7 @@
 .top {
   padding-top: 15px;
   &__title {
-    font-family:'Rubik', sans serif;
+    font-family: $f-rubik;
     font-weight: 300;
     font-size: 36px;
     line-height: 24px;
@@ -108,39 +109,35 @@
 .top-slider {
   padding-top: 100px;
   background-color: #fcd7b6;
-
   &__container {
     max-width: 1460px;
   }
-
   &__item {
     display: flex !important;
     justify-content: space-between;
   }
-
   &__content {
     padding-left: 60px;
     padding-top: 90px;
   }
-
   &__title {
-    @extend %rubik-500;
+    font-family: $f-rubik;
+    font-weight: 500;
     max-width: 470px;
     font-size: 72px;
     line-height: 70px;
     color: $title-h6;
     margin-bottom: 45px;
   }
-
   &__text {
     max-width: 360px;
     font-size: 18px;
     color: $default;
     margin-bottom: 40px;
   }
-
   &__btn {
-    @extend %rubik-500;
+    font-family: $f-rubik;
+    font-weight: 500;
     width: 200px;
     height: 60px;
     font-size: 15px;
@@ -152,12 +149,10 @@
     border: none;
     cursor: pointer;
   }
-
   &__btn-icon {
     position: relative;
     right: 45px;
     cursor: pointer;
-
     path {
       fill: rgba(255, 255, 255)
     }
@@ -167,12 +162,12 @@
     display: flex;
     justify-content: center;
     padding: 10px 0 45px;
-
     li {
       padding: 5px;
-
       button {
-        @extend %rubik-500;
+        font-family: $f-rubik;
+        font-weight: 500;
+        ;
         padding: 0;
         font-size: 11px;
         width: 30px;
@@ -217,7 +212,8 @@
     left: 75px;
   }
   &__item-title {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     color: #414141;
     font-size: 18px;
     line-height: 40px;
@@ -226,7 +222,8 @@
     position: relative;
     font-size: 16px;
     color: #585858;
-    @extend %dmsans-400;
+    font-family: $f-dmsans;
+    font-weight: 400;
   }
   &__item--line::before,
   &__item--line::after {
@@ -296,14 +293,16 @@
     }
   }
   &__title {
-    @extend %dmsans-500;
+    font-family: $f-dmsans;
+    font-weight: 500;
     color: $title-h6;
     font-size: 16px;
     line-height: 40px;
     margin-bottom: 15px;
   }
   &__price {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     font-size: 16px;
     line-height: 40xp;
     color: #a2bac7;
@@ -338,7 +337,8 @@
     margin: auto auto 90px 20px;
   }
   &__subtitle {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 30px;
@@ -351,7 +351,8 @@
     margin-bottom: 30px;
   }
   &__btn {
-    @extend %rubik-500;
+    font-family: $f-rubik;
+    font-weight: 500;
     font-size: 15px;
     line-height: 12px;
     width: 180px;
@@ -391,12 +392,14 @@
     margin: 0 0 0 35px;
   }
   &__item-link {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     font-size: 20px;
     color: #191919;
   }
   &__item-subtitle {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     color: #a3bbc8;
     margin-left: 35px;
   }
@@ -423,7 +426,8 @@
     color: #262626;
   }
   &__link {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     position: relative;
     margin: 0;
     color: #262626;
@@ -449,7 +453,8 @@
     }
   }
   &__item-link {
-    @extend %poppins-700;
+    font-family: $f-poppins;
+    font-weight: 700;
     position: relative;
     bottom: 15px;
     font-size: 18px;
@@ -469,7 +474,8 @@
     min-height: 220px;
   }
   &__item-text {
-    @extend %dmsans-500;
+    font-family: $f-dmsans;
+    font-weight: 500;
     font-size: 18px;
     color: #262626;
     margin-bottom: 20px;
@@ -536,7 +542,8 @@
     margin-bottom: 28px;
   }
   &__title {
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 18px 0 28px;
     font-size: 16px;
@@ -569,7 +576,8 @@
     display: flex;
   }
   &__form-input {
-    @extend %dmsans-400;
+    font-family: $f-dmsans;
+    font-weight: 400;
     border: none;
     background-color: #fef7f0;
     max-width: 170px;
@@ -626,8 +634,9 @@
     margin-bottom: 30px;
   }
   &__btn {
+    font-family: $f-rubik;
+    font-weight: 500;
     width: 100%;
-    @extend %rubik-500;
     background-color: #a3bbc8;
     font-size: 18px;
     line-height: 60px;
@@ -659,7 +668,8 @@
   }
   &__link {
     display: block;
-    @extend %rubik-500;
+    font-family: $f-rubik;
+    font-weight: 500;
     color: #243f4d;
     font-size: 18px;
     line-height: 60px;
@@ -689,7 +699,8 @@
     text-align: left;
     font-size: 18px;
     color: #243f4d;
-    @extend %dmsans-700;
+    font-family: $f-dmsans;
+    font-weight: 700;
     margin-bottom: 35px;
     &::after{
       content: '';
@@ -794,7 +805,8 @@
 .irs--flat .irs-from,
 .irs--flat .irs-to,
 .irs--flat .irs-single {
-  @extend %rubik-500;
+  font-family: $f-rubik;
+  font-weight: 500;
   color: #243f4d;
   font-size: 14px;
   line-height: 43px;
@@ -997,7 +1009,8 @@
     width: 550px;
   }
   &__subtitle {
-    @extend %rubik-400;
+    font-family: $f-rubik;
+    font-weight: 400;
     padding-top: 30px;
     font-size: 40px;
     line-height: 27px;
@@ -1089,7 +1102,8 @@
   height: 51px;
   border: none;
   outline: none;
-  @extend %rubik-400;
+  font-family: $f-rubik;
+  font-weight: 400;
   color: #333333;
   font-size: 15px;
   text-align: center;
@@ -1141,7 +1155,6 @@
   display: flex;
   .slick-vertical .slick-slide {
     height: 182px;
-    // margin-bottom: 25px;
   }
   &__thumb {
     width: 130px;
@@ -1170,7 +1183,49 @@
   }
 }
 
-
+.product-tabs {
+  padding: 100px 0 120px;
+  &__top {
+    margin-bottom: 40px;
+  }
+  &__top-item {
+    display: inline-block;
+    font-family: $f-rubik;
+    font-weight: 500;
+    width: 240px;
+    height: 52px;
+    padding: 12px 0px;
+    font-size: 18px;
+    text-align: center;
+    color: #243f4d;
+    background-color: #edf1f4;
+    border-radius: 6px;
+    &+.product-tabs__top-item {
+      margin-left: 12px;
+    }
+    &:first-child {
+      margin-left: 165px;
+    }
+    & + span {
+      color: inherit;
+    }
+  }
+  &__top-item--active {
+    width: 240px;
+    height: 50px;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #a3bbc8;
+    color: #fff;
+    border-radius: 6px;
+  }
+  &__content-item {
+    display: none;
+    &.product-tabs__content-item--active {
+      display: block;
+    }
+  }
+}
 
 
 
