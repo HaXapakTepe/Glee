@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-  width: 1770px;
+  width: 1920px;
   margin: 0 auto;
   flex-grow: 1;
 }
@@ -40,7 +40,7 @@ body {
   line-height: 65px;
   font-family: $f-dmsans;
   font-weight: 700;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .filter {
@@ -54,7 +54,7 @@ body {
   border: none;
   background-color: transparent;
   color: #b8b8b8;
-  margin: 0 10px ;
+  margin: 0 7px ;
   cursor: pointer;
   transition: all .3s;
   &:hover{
@@ -75,13 +75,13 @@ body {
   }
   &__item {
     color: #979ba0;
+      &::after {
+        content: '/';
+    }
   }
   &__link {
     color: inherit;
     margin: 0 5px;
-    &::after {
-      content: '/';
-    }
   }
 }
 
