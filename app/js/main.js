@@ -1,5 +1,13 @@
 $ (function() {
 
+  // $('.related-slider__inner').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 4,
+
+  // });
+
   $('.product-tabs__top-item').on('click', function (e){
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -7,8 +15,6 @@ $ (function() {
     
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
-
-
     
   });
 

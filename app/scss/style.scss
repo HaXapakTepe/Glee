@@ -7,7 +7,8 @@
 .header {
   width: 1770px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 63px 0 50px;
+  ;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -19,6 +20,7 @@
 }
 
 .menu {
+  margin-left: -8px;
   &__list {
     display: flex;
     position: relative;
@@ -196,7 +198,8 @@
   .slick-dots {
     display: flex;
     justify-content: center;
-    padding: 10px 0 45px;
+    padding: 5px 0 38px;
+    ;
     li {
       padding: 5px;
       button {
@@ -234,12 +237,12 @@
     position: relative;
     max-width: 280px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 45px 0 40px;
   }
   &__item-img {
     position: absolute;
-    top: 47px;
-    left: -14px;
+    top: 50px;
+    left: -9px;
   }
   &__item {
     margin-left: 65px;
@@ -264,9 +267,9 @@
     content: '';
     position: absolute;
     width: 1px;
-    height: 180px;
+    height: 175px;
     background-color: #e8e4df;
-    top: -80px;
+    top: -75px;
   }
   &__item--line::before {
     left: -235px;
@@ -289,7 +292,8 @@
 .product-item {
   display: flex;
   flex-direction: column;
-  min-width: 270px;
+  max-width: 270px;
+  padding: 0 30px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -332,7 +336,6 @@
     color: $title-h6;
     font-size: 16px;
     line-height: 40px;
-    margin-bottom: 15px;
   }
   &__price {
     font-family: $f-dmsans;
@@ -1237,7 +1240,7 @@
 }
 
 .product-tabs {
-  padding: 100px 0 120px;
+  padding-top: 100px;
   &__top {
     margin-bottom: 40px;
   }
@@ -1280,10 +1283,80 @@
   }
 }
 
+.related-slider {
+  margin-bottom: 110px;
+  &__title {
+    color: #243f4d;
+    margin-bottom: 60px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px; 
+  }
+}
 
+.blog__inner {
+  padding: 120px 0;
+}
 
+.filter-search {
+  margin-bottom: 55px;
+  &__form {
+    display: flex;
+  }
+  &__input {
+    width: 270px;
+    height: 40px;
+    padding: 0 5px 0 15px;
+    border:2px solid #ebf1f3;
+    border-radius: 6px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -48px;
+    border-radius: 6px;
+    width: 48px;
+    height: 40px;
+    background-color: #ebf1f3;
+    border: none;
+    cursor: pointer;
+  }
+}
 
-
+.filter-posts {
+  &__title {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      top: 14px;
+      left: 150px;
+      background-color: #a3bbc8;
+    }
+  }
+  &__link {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__images {
+    min-width: 70px;
+    margin-right: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+  &__date {
+    font-size: 12px;
+    line-height: 30px;
+    color: #9a9a9a;
+  }
+}
 
 
 @import 'media';
