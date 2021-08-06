@@ -283,7 +283,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
-    padding-top: 25px;
+    padding-top: 80px;
   }
 }
 
@@ -425,7 +425,7 @@
 }
 
 .design {
-  padding: 80px 0 120px;
+  padding: 110px 0 120px;
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -447,6 +447,7 @@
     font-family: $f-dmsans;
     font-weight: 700;
     font-size: 20px;
+    line-height: 26px;
     color: #191919;
   }
   &__item-subtitle {
@@ -1281,16 +1282,46 @@
   }
 }
 
-.related-slider {
+.related {
   margin-bottom: 110px;
+}
+.related-slider {
+  position: relative;
   &__title {
+    text-align: left;
     color: #243f4d;
     margin-bottom: 60px;
   }
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px; 
+    display: flex;
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -120px;
+      height: 50px;
+      width: 50px;
+      border-radius: 6px;
+      background-color: #fff;
+      border: 2px solid #a3bbc8;
+      z-index: 5;
+      transition: all .3s;
+      cursor: pointer;
+    }
+    .slick-disabled {
+      border: 2px solid #edf1f4;
+    }
+    .slick-prev {
+      right: 70px;
+    }
+    .slick-next {
+      right: 0;
+    }
+    .slick-track {
+      padding: 30px 10px;
+    }
   }
 }
 
@@ -1320,11 +1351,10 @@
     height: 70px;
     background-color: #a3bbc8;
   }
-  &__item-date {
-    color: #fff;
-  }
+  &__item-date,
   &__item-autor {
     color: #fff;
+    font-size: 12px;
   }
   &__item-title {
     font-size: 36px;

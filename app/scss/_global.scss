@@ -75,8 +75,8 @@ body {
   }
   &__item {
     color: #979ba0;
-      &::after {
-        content: '/';
+    &:not(:last-child):after {
+      content: '/';
     }
   }
   &__link {
