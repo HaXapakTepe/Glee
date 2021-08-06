@@ -86,12 +86,11 @@
   &__img-heart {
     position: relative;
     left: 8px;
-    top: 4px;
   }
   &__img-cart {
     position: relative;
-    left: -5px;
-    top: 4px;
+    left: -10px;
+    
   }
   &__num-right {
     position: absolute;
@@ -99,8 +98,7 @@
     height: 16px;
     border-radius: 50%;
     background-color: $num;
-    top: -3px;
-    right: -3px;
+    top: -8px;
     font-size: 10px;
     line-height: 17px;
     text-align: center;
@@ -112,7 +110,7 @@
     height: 16px;
     border-radius: 50%;
     background-color: $num;
-    top: -3px;
+    top: -8px;
     left: 20px;
     font-size: 10px;
     line-height: 17px;
@@ -404,12 +402,12 @@
     color: $title-h6;
     margin-bottom: 27px;
   }
-  &__btn {
+   &__btn{
     font-family: $f-rubik;
     font-weight: 500;
     font-size: 15px;
     line-height: 12px;
-    width: 183px;
+    width: 180px;
     height: 60px;
     color: #436372;
     background-color: #feefe2;
@@ -1296,12 +1294,75 @@
   }
 }
 
-.blog__inner {
-  padding: 120px 0;
+.blog-page {
+  padding: 120px 0 42px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__items {
+    position: relative;
+  }
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__item-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 275px;
+    height: 70px;
+    background-color: #a3bbc8;
+  }
+  &__item-date {
+    color: #fff;
+  }
+  &__item-autor {
+    color: #fff;
+  }
+  &__item-title {
+    font-size: 36px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 40px;
+  }
+  &__item-text {
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__item-btn {
+    font-family: $f-rubik;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+    width: 180px;
+    height: 60px;
+    margin-bottom: 50px;
+    color: #a3bbc8;
+    background-color: #fff;
+    border: 1px solid #a3bbc8;
+    text-align-last: left;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  &__item-icon {
+    position: relative;
+    right: 45px;
+    cursor: pointer;
+  }
+  &__aside {
+    width: 270px;
+  }
 }
 
 .filter-search {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   &__form {
     display: flex;
   }
@@ -1327,6 +1388,7 @@
 }
 
 .filter-posts {
+  padding: 25px 0;
   &__title {
     &::after {
       content: "";
@@ -1356,6 +1418,11 @@
     line-height: 30px;
     color: #9a9a9a;
   }
+}
+
+.blog-pagination {
+  justify-content: start;
+  padding: 0;
 }
 
 
