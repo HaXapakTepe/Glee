@@ -1482,33 +1482,27 @@
       margin-bottom: 25px;
       color: #333;
     }
-
     h6 {
       margin: 60px 0 25px;
       font-size: 18px;
     }
-
     p {
       margin-bottom: 25px;
       color: #243f4d;
-
       span {
         font-weight: 500;
       }
     }
-
     blockquote {
       margin: 45px 0;
       padding: 25px 85px 25px 35px;
       color: #243f4d;
       background-color: #edf1f4;
       border-left: 6px solid #a3bbc8;
-
       span {
         display: block;
         position: relative;
         margin-left: 35px;
-
         &::before {
           position: absolute;
           bottom: 13px;
@@ -1638,6 +1632,7 @@
     height: 20px;
     padding: 20px 45px 20px 20px;
     border: 1px solid #e5e5e5;
+    transition: all .3s;
     &::placeholder {
       color: #999999;
     }
@@ -1645,7 +1640,8 @@
       border: 1px solid #a3bbc8;
       &::placeholder {
         color: #333333;
-    }
+      }
+    } 
   }
   &__user-icon {
     position: absolute;
@@ -1653,6 +1649,14 @@
     left: 370px;
   }
   &__mail-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  &__textarea-box {
+    position: relative;
+  }
+  &__comment-icon {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -1667,13 +1671,27 @@
     line-height: 36px;
     margin-bottom: 40px;
     resize: none;
+    transition: all .3s;
+    &::placeholder {
+      color: #999999;
+    }
+    &:hover {
+      border: 1px solid #a3bbc8;
+      &::placeholder {
+        color: #333333;
+      }
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+    width: 190px;
+    height: 50px;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
   }
 }
-
-
-
-
-
 
 
 
