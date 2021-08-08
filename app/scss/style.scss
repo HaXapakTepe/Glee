@@ -509,7 +509,7 @@
     }
   }
   &__item-link {
-    font-family: $f-poppins;
+    font-family: $f-dmsans;
     font-weight: 700;
     position: relative;
     bottom: 18px;
@@ -1030,7 +1030,7 @@
   &__link--active:hover::after {
     content: 'ADD TO CART';
     position: absolute;
-    left: 0px;
+    left: 0;
     padding: 10px 45px;
     width: 210px;
     height: 50px;
@@ -1482,33 +1482,27 @@
       margin-bottom: 25px;
       color: #333;
     }
-
     h6 {
       margin: 60px 0 25px;
       font-size: 18px;
     }
-
     p {
       margin-bottom: 25px;
       color: #243f4d;
-
       span {
         font-weight: 500;
       }
     }
-
     blockquote {
       margin: 45px 0;
       padding: 25px 85px 25px 35px;
       color: #243f4d;
       background-color: #edf1f4;
       border-left: 6px solid #a3bbc8;
-
       span {
         display: block;
         position: relative;
         margin-left: 35px;
-
         &::before {
           position: absolute;
           bottom: 13px;
@@ -1636,8 +1630,10 @@
     display: inline-block;
     width: 400px;
     height: 20px;
+    line-height: 36px;
     padding: 20px 45px 20px 20px;
     border: 1px solid #e5e5e5;
+    transition: all .3s;
     &::placeholder {
       color: #999999;
     }
@@ -1645,7 +1641,8 @@
       border: 1px solid #a3bbc8;
       &::placeholder {
         color: #333333;
-    }
+      }
+    } 
   }
   &__user-icon {
     position: absolute;
@@ -1653,6 +1650,14 @@
     left: 370px;
   }
   &__mail-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  &__textarea-box {
+    position: relative;
+  }
+  &__comment-icon {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -1667,14 +1672,140 @@
     line-height: 36px;
     margin-bottom: 40px;
     resize: none;
+    transition: all .3s;
+    &::placeholder {
+      color: #999999;
+    }
+    &:hover {
+      border: 1px solid #a3bbc8;
+      &::placeholder {
+        color: #333333;
+      }
+    }
+  }
+  &__btn {
+    text-transform: uppercase;
+    width: 190px;
+    height: 50px;
+    line-height: 21px;
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
   }
 }
 
+.contact {
+  padding-top: 120px;
+  &__subtitle {
+    font-family: $f-dmsans;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #a3bbc8;
+  }
+  &__title {
+    font-family: $f-dmsans;
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 57px;
+    margin-bottom: 70px;
+    color: #436372;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 370px;
+    height: 380px;
+    background-color: #fbfbfb;
+    border: 3px solid transparent;
+    transition: all .3s;
+    &:hover {
+      border: 3px solid #a3bbc8;
+    }
+  }
+  &__address-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    transition: all .3s;
+    &:hover {
+      background-color: #a3bbc8;
+      path {
+        transition: all .3s;
+        fill: #fff;
+      }
+    }
+  }
+  &__address-subtitle {
+    font-family: $f-dmsans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    margin-bottom: 10px;
+  }
+  &__address-text,
+  &__address-mail,
+  &__address-phone {
+    display: block;
+    color: #565872;
+  }
+}
 
+.map {
+  padding: 120px 0 130px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-form {
+    width: 620px;
+    margin-right: 50px;
+    &__text-input {
+      text-transform: uppercase;
+      width: 300px;
+      background-color: #fafafa;
+      border: none;
+      &::placeholder {
+        color: #7f8092;
+      }
+    }
+    &__user-icon {
+      left: 270px;
+    }
+    &__textarea {
+      height: 175px;
+      background-color: #fafafa;
+      border: none;
+      &::placeholder {
+        color: #7f8092;
+      }
+    }
+    &__btn {
+      font-family: $f-dmsans;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+  }
+}
 
-
-
-
+#map {
+  width: 500px;
+  height: 335px;
+}
 
 
 @import 'media';
