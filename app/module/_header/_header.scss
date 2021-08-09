@@ -1,0 +1,111 @@
+.header {
+  width: 1770px;
+  margin: 0 auto;
+  padding: 63px 0 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: 10px;
+  }
+}
+.menu {
+  margin-left: -8px;
+  &__list {
+    display: flex;
+    position: relative;
+    left: 80px;
+    font-family: $f-rubik;
+    font-weight: 500;
+  }
+  &__list-item+.menu__list-item {
+    padding-left: 35px;
+  }
+  &__list-link {
+    line-height: 12px;
+    font-size: 15px;
+    color: $default;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+  }
+  &__middle--line::before {
+    content: '';
+    position: absolute;
+    background-color: #fde7d3;
+    width: 1px;
+    height: 32px;
+  }
+  &__middle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    right: -10px;
+    width: 178px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fcd7b6;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -9px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: $bg-btn;
+  }
+  &__link {
+    position: relative;
+  }
+  &__img-heart {
+    position: relative;
+    left: 8px;
+  }
+  &__img-cart {
+    position: relative;
+    left: -10px;
+  }
+  &__num-right {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $num;
+    top: -8px;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    color: $title-h6;
+  }
+  &__num-left {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $num;
+    top: -8px;
+    left: 20px;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    color: $title-h6;
+  }
+}
