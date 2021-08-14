@@ -3,21 +3,17 @@
   margin: 0 auto;
   padding-top: 100px;
   background-color: #fcd7b6;
-
   &__container {
     max-width: 1460px;
   }
-
   &__item {
     display: flex !important;
     justify-content: space-between;
   }
-
   &__content {
     padding-left: 130px;
     padding-top: 120px;
   }
-
   &__title {
     font-family: $f-rubik;
     font-weight: 500;
@@ -27,14 +23,12 @@
     color: $title-h6;
     margin-bottom: 26px;
   }
-
   &__text {
     max-width: 360px;
     font-size: 18px;
     color: $default;
     margin-bottom: 35px;
   }
-
   &__btn {
     font-family: $f-rubik;
     font-weight: 500;
@@ -49,7 +43,6 @@
     border: none;
     cursor: pointer;
   }
-
   &__btn-icon {
     position: relative;
     right: 45px;
@@ -59,19 +52,12 @@
       fill: rgba(255, 255, 255)
     }
   }
-
-  &__img {
-    padding-right: 15px;
-  }
-
   .slick-dots {
     display: flex;
     justify-content: center;
     padding: 5px 0 38px;
-
     li {
       padding: 5px;
-
       button {
         font-family: $f-rubik;
         font-weight: 500;
@@ -85,13 +71,91 @@
         border-radius: 50%;
         cursor: pointer;
       }
-
       &.slick-active {
         button {
           color: #243f4d;
           background-color: #fff;
         }
       }
+    }
+  }
+}
+
+@media(max-width: 1700px) {
+  .top-slider {
+    width: 1460px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .top-slider {
+    max-width: 1030px;
+    padding-top: 50px;
+    &__item {
+      justify-content: space-around;
+    }
+    &__content {
+      padding-left: 0;
+      padding-top: 30px;
+    }
+    &__title {
+      max-width: 260px;
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0 0 10px;
+    }
+    &__text {
+      max-width: 250px;
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+    &__img {
+      object-fit: contain;
+      width: 60%;
+    }
+  }
+}
+
+@media(max-width: 1050px) {
+  .top-slider {
+    max-width: 730px;
+    padding-top: 25px;
+    &__title {
+      max-width: 260px;
+      font-size: 46px;
+      line-height: 50px;
+    }
+    &__text {
+      max-width: 220px;
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+  }
+}
+
+@media(max-width: 750px) {
+  .top-slider{
+    max-width: 450px;
+    &__item {
+      .top-slider__img {
+        display: none;
+      }
+    }
+    &__content {
+      padding-top: 0;
+      margin-left: 60px;
+    }
+    ul.slick-dots {
+      padding: 5px 0 20px;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .top-slider {
+    max-width: 310px;
+    &__content {
+      margin-left: 30px;
     }
   }
 }

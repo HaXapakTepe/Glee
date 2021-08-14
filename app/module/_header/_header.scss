@@ -137,7 +137,7 @@
 
 @media(max-width: 1700px) {
   .header {
-    max-width: 1100px;
+    max-width: 1070px;
   }
   .menu {
     &__list {
@@ -145,7 +145,7 @@
     }
   }
   .user-nav {
-    margin: 0 60px 0 20px;
+    margin-right: 70px;
   }
 }
 
@@ -171,7 +171,7 @@
       transform: translateY(-200%);
       position: absolute;
       width: 100%;
-      top: 120px;
+      top: 110px;
       flex-direction: column;
       align-items: center;
       z-index: 5;
