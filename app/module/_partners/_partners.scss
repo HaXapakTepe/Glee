@@ -1,0 +1,26 @@
+.partners {
+  position: relative;
+  background: #fef7f0;
+
+  &__bg {
+    position: absolute;
+    background: #fef7f0;
+    width: 100%;
+    height: 435px;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  &__list {
+    width: 1135px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 265px;
+    background: #fef7f0;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+}
