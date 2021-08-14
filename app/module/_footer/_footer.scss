@@ -1,22 +1,29 @@
 .footer-top {
   border-bottom: 1px solid #dae4e9;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 78px;
+
   &__contact {
-    width: 210px;
-    margin-right: 60px;
+    max-width: 210px;
+    margin-right: 20px;
     padding-left: 12px;
   }
+
   &__nav {
-    margin-right: 150px;
+    margin-right: 20px;
   }
+
   &__item-form {
     max-width: 280px;
+    margin-bottom: 20px;
   }
+
   &__logo {
     margin-bottom: 25px;
   }
+
   &__title {
     font-family: $f-dmsans;
     font-weight: 700;
@@ -27,6 +34,7 @@
     line-height: 21px;
     color: #1f2044;
   }
+
   &__adress,
   &__phone,
   &__email {
@@ -36,21 +44,24 @@
     margin-bottom: 7px;
     color: $list-nav;
   }
+
   &__link,
   &__list {
-    display: block;
     font-size: 14px;
     line-height: 32px;
     color: $list-nav;
   }
+
   &__text {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 35px;
   }
+
   &__form {
     display: flex;
   }
+
   &__form-input {
     font-family: $f-dmsans;
     font-weight: 400;
@@ -59,11 +70,13 @@
     max-width: 170px;
     height: 40px;
     padding: 0 12px;
+
     &::placeholder {
       color: #234969;
       font-size: 12px;
     }
   }
+
   &__form-btn {
     border: none;
     background-color: $bg-btn;
@@ -80,15 +93,35 @@
   line-height: 32px;
   height: 90px;
   color: #7b7b7b;
+
   &__copy {
     font-size: 14px;
     line-height: 32px;
     color: #7b7b7b;
   }
+
   &__link {
     font-size: 14px;
     line-height: 32px;
     color: #7b7b7b;
     margin: 0 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    justify-content: center;
+  } 
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {}
+.footer-bottom{
+  &__copy,
+  &__link {
+    font-size: 12px;
   }
 }
