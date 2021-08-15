@@ -11,3 +11,27 @@
     height: 500px;
   }
 }
+
+@media(max-width: 900px) {
+  .video-interior {
+    padding-bottom: 50px;
+    &__popup {
+      max-height: 300px;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .video-interior {
+    padding-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width: 420px) {
+  .video-interior {
+    max-width: 300px;
+  }
+}

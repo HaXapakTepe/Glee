@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   flex-grow: 1;
 }
@@ -136,3 +136,20 @@ body {
     }
   }
 }
+
+
+@media(max-width: 900px) {
+  .title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media(max-width: 620px) {
+  .title {
+    font-size: 27px;
+  }
+}
+
+
+
