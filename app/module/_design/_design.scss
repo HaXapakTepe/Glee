@@ -36,3 +36,44 @@
     margin-left: 35px;
   }
 }
+
+@media(max-width: 900px) {
+  .design {
+    padding: 40px;
+    &__items {
+      padding-top: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 750px) {
+  .design {  
+    &__items {
+      grid-gap: 15px;
+    }
+    &__item {
+      min-height: 170px;
+    }
+  }
+}
+
+@media(max-width: 550px) {
+  .design {  
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      min-height: 230px;
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  .design { 
+    padding: 20px; 
+    &__item {
+      min-height: 170px;
+    }
+  }
+}

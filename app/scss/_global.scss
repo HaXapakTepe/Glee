@@ -136,3 +136,20 @@ body {
     }
   }
 }
+
+
+@media(max-width: 900px) {
+  .title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media(max-width: 620px) {
+  .title {
+    font-size: 27px;
+  }
+}
+
+
+

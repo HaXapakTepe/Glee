@@ -118,7 +118,7 @@
 
 @media(max-width: 1050px) {
   .top-slider {
-    max-width: 730px;
+    max-width: 880px;
     padding-top: 25px;
     &__title {
       max-width: 260px;
@@ -133,9 +133,15 @@
   }
 }
 
+@media(max-width: 900px) {
+  .top-slider {
+    max-width: 730px;
+  }
+}
+
 @media(max-width: 750px) {
   .top-slider{
-    max-width: 450px;
+    max-width: 550px;
     &__item {
       .top-slider__img {
         display: none;
@@ -153,9 +159,15 @@
 
 @media(max-width: 620px) {
   .top-slider {
-    max-width: 310px;
+    max-width: 400px;
     &__content {
       margin-left: 30px;
     }
+  }
+}
+
+@media(max-width: 420px) {
+  .top-slider {
+    max-width: 300px;
   }
 }
