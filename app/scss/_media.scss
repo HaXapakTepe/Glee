@@ -80,9 +80,6 @@
     &__text-input:nth-child(1) {
       margin-right: 10px;
     }
-    &__comments-img {
-      margin-right: 15px;
-    }
   }
 }
 
@@ -90,6 +87,9 @@
   .blog-one {
     &__comments-container {
       margin-left: 0;
+    }
+    &__comments-img {
+      margin-right: 15px;
     }
   }
 }
@@ -116,6 +116,9 @@
     &__item-title {
       font-size: 30px;
       margin-bottom: 15px;
+    }
+    &__comments-img {
+      display: none;
     }
   }
 
