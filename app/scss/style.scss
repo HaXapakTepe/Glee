@@ -601,7 +601,7 @@
     justify-content: space-between;
   }
   &__content {
-    width: 830px;
+    max-width: 830px;
     margin-right: 70px;
   }
   &__items {
@@ -616,7 +616,7 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    width: 275px;
+    width: 270px;
     height: 70px;
     background-color: #a3bbc8;
   }
@@ -627,8 +627,8 @@
   }
   &__item-title {
     font-size: 36px;
-    line-height: 27px;
-    margin-bottom: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
   &__item-link {
     color: #333333;
@@ -842,8 +842,7 @@
     padding: 30px 0;
   }
   &__comments-container {
-    width: 700px;
-    margin-left: auto;
+    margin-left: 130px;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
   }
