@@ -988,7 +988,7 @@
     display: flex;
     justify-content: space-between;
   }
-  &__address {
+  &__info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1008,8 +1008,11 @@
         fill: #fff;
       }
     }
+    &:nth-child(-n+2) {
+      margin-right: 10px;
+    }
   }
-  &__address-list {
+  &__info-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1028,7 +1031,7 @@
       background-color: #a3bbc8;
     }
   }
-  &__address-subtitle {
+  &__info-subtitle {
     font-family: $f-dmsans;
     font-weight: 700;
     font-size: 20px;
@@ -1036,9 +1039,9 @@
     color: #222222;
     margin-bottom: 10px;
   }
-  &__address-text,
-  &__address-mail,
-  &__address-phone {
+  &__info-text,
+  &__info-mail,
+  &__info-phone {
     display: block;
     color: #565872;
   }
