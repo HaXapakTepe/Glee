@@ -15,8 +15,7 @@ body {
 }
 
 .main {
-  max-width: 1920px;
-  margin: 0 auto;
+  max-width: 100%;
   flex-grow: 1;
 }
 
@@ -151,5 +150,19 @@ body {
   }
 }
 
+@media(max-width: 450px) {
+  .pagination {
+    &__previous {
+      margin-right: 5px;
+    }
 
+    &__link {
+      padding: 10px 10px;
+      margin-right: 10px;
+    }
 
+    &__next {
+      padding: 10px 10px;
+    }
+  }
+}

@@ -127,6 +127,11 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    &__item {
+      &:nth-child(3) {
+        margin-top: 10px;
+      }
+    }
   }
 }
 
@@ -134,6 +139,16 @@
   .partners {
     &__list {
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media(max-width: 746px) {
+  .blog {
+    &__item {
+      &:nth-child(n+1) {
+        margin-top: 10px;
+      }
     }
   }
 }

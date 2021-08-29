@@ -67,3 +67,22 @@
     border: 2px solid #a3bbc8;
   }
 }
+
+@media(max-width: 900px) {
+  .modal {
+    padding-top: 60px;
+    margin: 0 auto 60px;
+  }
+
+}
+
+@media(max-width: 400px) {
+  .modal {
+    padding-top: 30px;
+    margin: 0 auto 30px;
+    &__label,
+    &__error {
+      font-size: 14px;
+    }
+  }
+}

@@ -78,10 +78,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    right: -9px;
     width: 50px;
     height: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
     border-radius: 50%;
     background-color: #edf1f4;
     cursor: pointer;
@@ -248,12 +247,12 @@
   }
   .user-nav {
     width: 100%;
-    margin: 0 15px 20px;
+    margin: 0 5px 20px;
     &__left{
       margin-right: 0;
     }
     &__right {
-      margin-left: 10px;
+      margin-left: 20px;
     }
   }
 }

@@ -1,4 +1,5 @@
 .partners {
+  max-width: 1920px;
   position: relative;
   background: #fef7f0;
 
@@ -12,7 +13,6 @@
   }
 
   &__list {
-    width: 1135px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,5 +22,13 @@
 
   &__item {
     list-style-type: none;
+  }
+}
+
+@media(max-width: 900px) {
+  .partners {
+    &__list {
+      flex-wrap: wrap;
+    }
   }
 }

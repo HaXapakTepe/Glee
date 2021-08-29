@@ -113,6 +113,7 @@
 @media (max-width: 900px) {
   .footer-top {
     justify-content: center;
+    padding-top: 40px;
   } 
   .footer-bottom {
     flex-wrap: wrap;
@@ -120,10 +121,14 @@
   }
 }
 
-@media (max-width: 620px) {}
-.footer-bottom{
-  &__copy,
-  &__link {
-    font-size: 12px;
+@media (max-width: 620px) {
+  .footer-top {
+    padding-top: 20px;
+  }
+  .footer-bottom{
+    &__copy,
+    &__link {
+      font-size: 12px;
+    }
   }
 }
